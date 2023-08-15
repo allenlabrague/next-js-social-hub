@@ -14,6 +14,10 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
+    image: {
+      type: String, // Specify that the field is a string (image path)
+      default: "/no-images.jpg", // Default image path
+    },
   },
   { timestamps: true }
 );
